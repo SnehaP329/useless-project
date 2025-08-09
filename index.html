@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Troll Quiz Game</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <video autoplay muted loop id="bgVideo">
+    <source src="cat1.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+   <div id="nameInput">
+    <h2>Enter your name to start wasting time</h2>
+    <input type="text" id="username" placeholder="Your name">
+    <br><br>
+    <button onclick="startQuiz()">Start</button>
+  </div>
+  <div id="game" style="display:none;">
+    <div id="question"></div>
+    <input type="text" id="answer" placeholder="Enter your answer">
+    <br>
+    <button onclick="submitAnswer()">Submit</button>
+    <button id="nextBtn" onclick="nextQuestion()" style="display:none;">Next Question</button>
+    <p id="result"></p>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

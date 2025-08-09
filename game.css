@@ -1,0 +1,66 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  background-color: #fdfdfd;
+  padding: 50px;
+  color: black;
+}
+
+#game {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 20px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+}
+input {
+  padding: 12px;
+  font-size: 18px;
+  width: 80%;
+  max-width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 18px;
+  margin: 15px 8px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 0.5; /* Optional: lowers brightness for readability */
+}
+
+/* Optional: improve readability over video */
+#game, #nameInput {
+  background-color: rgba(255, 255, 255,0.45);
+  border-radius: 10px;
+  padding: 30px;
+  z-index: 1;
+  position: relative;
+}
+button:hover {
+  background-color: #0056b3;
+}
+#result {
+  color: black;
+  //color: #e74c3c;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
